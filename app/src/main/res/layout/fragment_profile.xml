@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarbasic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#039BE5"
+
+            app:popupTheme="@style/ThemeOverlay.AppCompat">
+            <!--        #4EACE2-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rellay"
+                android:layout_height="match_parent"
+
+
+                android:paddingLeft="-20dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/backbtn"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/chatlogoo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/friendname"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:paddingRight="15dp"
+                        android:text="My Profile"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_margin = "10dp"
+            android:layout_height="700dp">
+
+
+            <ImageView
+                android:id="@+id/fragment_profile_userPicture"
+                android:layout_width="200sp"
+                android:layout_height="250sp"
+                android:paddingBottom="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_profile"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    app:layout_constraintTop_toBottomOf="@id/fragment_profile_userPicture"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:orientation="horizontal"
+    android:id="@+id/cameralay">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fragment_profile_camera_Picture"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/request_sent_bg"
+
+
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_camera_white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/fragment_profile_image_Picture"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/fragment_profile_image_Picture"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="132dp"
+
+
+            android:background="@drawable/request_sent_bg"
+            android:scaleType="centerInside"
+
+
+            android:src="@drawable/ic_photo_library"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_profile_userName"
+                android:layout_width="300sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cameralay"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/white"
+                    android:id="@+id/nameed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textSize="20sp"
+
+                    android:hint="Name" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_profile_userEmaillay"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment_profile_userName"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/white"
+                    android:id="@+id/fragment_profile_userEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textSize="20sp"
+
+                    android:hint="Email" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_profile_userBiolay"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment_profile_userEmaillay"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/white"
+                    android:id="@+id/fragment_profile_userBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+
+                    android:hint="Bio" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/fragment_profile_userAgelay"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment_profile_userBiolay"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@color/white"
+                    android:id="@+id/fragment_profile_userAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+
+                    android:hint="Age" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/fragment_profile_update"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment_profile_userAgelay"
+
+                android:layout_centerHorizontal="true"
+                android:text="Update"
+                />
+
+
+            <Button
+                android:id="@+id/fragment_profile_signOut"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:text="Sign Out"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fragment_profile_update" />
+
+
+<!--            <Button-->
+<!--                android:id="@+id/fragment_profile_update"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/fragment_profile_signOut"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:text="UPDATE"-->
+<!--                />-->
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

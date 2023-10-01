@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarbasic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#039BE5"
+
+            app:popupTheme="@style/ThemeOverlay.AppCompat">
+            <!--        #4EACE2-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rellay"
+                android:layout_height="match_parent"
+
+
+                android:paddingLeft="-20dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/backbtn"
+                        android:src="@drawable/ic_left_black_24dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/friendname"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:text="Friend Name"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/statustv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/friendname"
+                        android:text="statustv"
+                        android:textColor="#E6FFFFFF"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_alignParentEnd="true">-->
+
+<!--                    <com.makeramen.roundedimageview.RoundedImageView-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="70dp"-->
+
+<!--                        android:layout_marginStart="5dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:id="@+id/mfriendpic"-->
+<!--                        android:src="@drawable/ic_profile"-->
+
+<!--                        android:scaleType="centerInside"-->
+
+
+<!--                        app:riv_corner_radius="45dip"-->
+<!--                        app:riv_mutate_background="true"-->
+<!--                        app:riv_oval="true" />-->
+
+
+
+<!--                </LinearLayout>-->
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#59E7D7D7"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+      >
+
+        <LinearLayout
+            android:id="@+id/userstatus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_messages_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/fragment_messages_layout"
+            android:layout_below="@id/userstatus"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/fragment_messages_friendPicture"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_profile"
+            app:riv_corner_radius="45dip"
+            app:riv_mutate_background="true"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/fragment_messages_friendName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_messages_friendPicture"
+            android:layout_centerHorizontal="true"
+            android:text="Amitoz Singh"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/fragment_messages_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/sendPic"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.07"
+                android:src="@drawable/ic_photo_library_grey" />
+
+            <ImageView
+                android:id="@+id/sendCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.07"
+                android:src="@drawable/ic_photo_camera_grey" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_messages_messageBox"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.95"
+                android:hint="Write a message ...." />
+
+
+            <ImageView
+                android:id="@+id/sendArrow"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:src="@drawable/ic_send_black_24dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>

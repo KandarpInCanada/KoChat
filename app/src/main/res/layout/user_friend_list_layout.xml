@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+
+        android:layout_marginEnd="3dp"
+        android:background="@color/white"
+        android:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/userdp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_profile"
+                app:riv_corner_radius="45dip"
+                app:riv_mutate_background="true"
+                app:riv_oval="true" />
+
+            <TextView
+                android:id="@+id/friend_request_userName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.20"
+                android:text="Carlos Valentin"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="60dp"
+
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/messageuser"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.05"
+
+
+                    android:src="@drawable/ic_message_blue" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
