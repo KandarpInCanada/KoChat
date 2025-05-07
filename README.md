@@ -1,5 +1,11 @@
-# Kotlin-Chatting-App
-A chatting App written in Kotlin and  built using Socket.io, RxJava, Firebase and Node js . Having node.js server, helps to improve security, app performance and unlock features such as user to user push notifications .This Chatting app also uses Cryptography algorithm  AES(Advanced Encryption Standard) for encryption and decryption.
+# Kotlin Chatting App 🔒💬
+
+[![Kotlin](https://img.shields.io/badge/Kotlin-1.8-blue.svg?logo=kotlin)](https://kotlinlang.org/)
+[![Socket.io](https://img.shields.io/badge/Socket.io-4.0-brightgreen?logo=socket.io)](https://socket.io/)
+[![Firebase](https://img.shields.io/badge/Firebase-9.0-orange?logo=firebase)](https://firebase.google.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-18.0-green?logo=node.js)](https://nodejs.org/)
+[![AES Encryption](https://img.shields.io/badge/Encryption-AES-important)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
+
 <h1>ScreenShots</h1>
 <p>
 <img src="https://github.com/amitozs999/Kotlin-Chatting-App/blob/master/app/videos/Screenshot_20200322-112713_kotlinchatapp.jpg" width="280" height="490"/>
@@ -16,5 +22,3 @@ A chatting App written in Kotlin and  built using Socket.io, RxJava, Firebase an
 <img src="https://github.com/amitozs999/Kotlin-Chatting-App/blob/master/app/videos/20200322_115901.gif" width="280" height="490"/>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 </p>
-
-
