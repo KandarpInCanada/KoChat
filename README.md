@@ -1,15 +1,15 @@
-# Kotlin Chatting App 🔒💬
+# Kotlin Chatting App
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF.svg?style=for-the-badge&logo=Kotlin&logoColor=white)
 ![Socket.io](https://img.shields.io/badge/Socket.io-010101.svg?style=for-the-badge&logo=socketdotio&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-DD2C00.svg?style=for-the-badge&logo=Firebase&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-5FA04E.svg?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
-## 📱 Overview
+## Overview
 
 SecureChat is a modern, privacy-focused messaging application built with Kotlin for Android. The app features real-time messaging with end-to-end encryption, user authentication, friend management, and a clean, intuitive interface.
 
-## ✨ Key Features
+## Key Features
 
 - **End-to-End Encryption**: All messages are secured with AES encryption for maximum privacy
 - **Real-time Messaging**: Instant message delivery powered by Socket.io
@@ -20,7 +20,7 @@ SecureChat is a modern, privacy-focused messaging application built with Kotlin 
 - **Profile Customization**: Update profile pictures and status messages
 - **Clean UI**: Material Design implementation with modern Android architecture
 
-## 📸 Screenshots
+## Screenshots
 
 <p align="center">
   <img src="https://github.com/amitozs999/Kotlin-Chatting-App/blob/master/app/videos/Screenshot_20200322-112713_kotlinchatapp.jpg" width="200" alt="Login Screen"/>
@@ -29,13 +29,13 @@ SecureChat is a modern, privacy-focused messaging application built with Kotlin 
   <img src="https://github.com/amitozs999/Kotlin-Chatting-App/blob/master/app/videos/Screenshot_20200322-114648_kotlinchatapp.jpg" width="200" alt="User Profile"/>
 </p>
 
-## 🎬 Demo
+## Demo
 
 <p align="center">
   <img src="https://github.com/amitozs999/Kotlin-Chatting-App/blob/master/app/videos/20200322_115901.gif" width="250" alt="App Demo"/>
 </p>
 
-## 🛠️ Technologies Used
+## 🛠Technologies Used
 
 - **Frontend**: 
   - Kotlin - Primary language for Android development
@@ -55,7 +55,7 @@ SecureChat is a modern, privacy-focused messaging application built with Kotlin 
   - AES encryption for message content
   - Secure token management
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Android Studio 4.0+
 - JDK 8+
@@ -63,13 +63,13 @@ SecureChat is a modern, privacy-focused messaging application built with Kotlin 
 - Firebase account
 - Android device or emulator running API 21+ (Android 5.0+)
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Client Setup
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/SecureChat.git
+   git clone https://github.com/KandarpInCanada/KoChat.git
    ```
 
 2. Open the project in Android Studio
@@ -103,28 +103,6 @@ SecureChat is a modern, privacy-focused messaging application built with Kotlin 
    npm start
    ```
 
-## 🏗️ Project Structure
-
-```
-├── app/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/example/securechat/
-│   │   │   │   ├── activities/
-│   │   │   │   ├── adapters/
-│   │   │   │   ├── models/
-│   │   │   │   ├── services/
-│   │   │   │   └── utils/
-│   │   │   ├── res/
-│   │   │   └── AndroidManifest.xml
-│   │   └── test/
-├── server/
-│   ├── src/
-│   ├── package.json
-│   └── .env
-└── README.md
-```
-
 ## 📝 Usage
 
 1. Register a new account or log in with existing credentials
@@ -154,16 +132,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📧 Contact
-
-For questions or feedback, please contact:
-- Email: your.email@example.com
-- GitHub: [Your GitHub Profile](https://github.com/yourusername)
-
 ---
 
-Made with ❤️ by [Your Name]
+Made with ❤️ by Kandarp Patel
