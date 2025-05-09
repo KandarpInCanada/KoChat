@@ -29,13 +29,7 @@ SecureChat is a modern, privacy-focused messaging application built with Kotlin 
   <img src="https://github.com/amitozs999/Kotlin-Chatting-App/blob/master/app/videos/Screenshot_20200322-114648_kotlinchatapp.jpg" width="200" alt="User Profile"/>
 </p>
 
-## Demo
-
-<p align="center">
-  <img src="https://github.com/amitozs999/Kotlin-Chatting-App/blob/master/app/videos/20200322_115901.gif" width="250" alt="App Demo"/>
-</p>
-
-## 🛠Technologies Used
+## Technologies Used
 
 - **Frontend**: 
   - Kotlin - Primary language for Android development
