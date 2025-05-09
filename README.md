@@ -103,7 +103,7 @@ SecureChat is a modern, privacy-focused messaging application built with Kotlin 
    npm start
    ```
 
-## 📝 Usage
+## Usage
 
 1. Register a new account or log in with existing credentials
 2. Add friends by searching for their username
@@ -111,18 +111,18 @@ SecureChat is a modern, privacy-focused messaging application built with Kotlin 
 4. Send text messages, images, and other media
 5. Enjoy secure, real-time communications!
 
-## 🔒 Security Features
+## Security Features
 
 - All messages are encrypted using AES before transmission
 - Authentication tokens are securely stored and managed
 - Sensitive data never leaves the device unencrypted
 - Regular security updates and patches
 
-## 🌐 API Documentation
+## API Documentation
 
 For developers interested in extending the application or understanding its internals, detailed API documentation is available in the `/docs` directory.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
